@@ -1,0 +1,778 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    background: #f4f6f9;
+
+    color: #172033;
+}
+
+
+/* ================= HERO ================= */
+
+.hero {
+
+    min-height: 650px;
+
+    background-image:
+        url("bommanahalli-circle.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-attachment: fixed;
+}
+
+
+.overlay {
+
+    min-height: 650px;
+
+    background:
+        linear-gradient(
+            rgba(5, 15, 30, 0.78),
+            rgba(5, 15, 30, 0.65)
+        );
+}
+
+
+/* ================= NAVBAR ================= */
+
+nav {
+
+    height: 80px;
+
+    max-width: 1250px;
+
+    margin: auto;
+
+    padding: 0 25px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+
+.logo {
+
+    color: white;
+
+    font-size: 27px;
+
+    font-weight: 800;
+}
+
+
+.logo span {
+
+    background: #2563eb;
+
+    padding: 7px 10px;
+
+    border-radius: 8px;
+
+    margin-right: 5px;
+}
+
+
+.nav-location {
+
+    color: white;
+
+    font-size: 15px;
+}
+
+
+/* ================= HERO CONTENT ================= */
+
+.hero-content {
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    padding: 90px 25px;
+
+    text-align: center;
+
+    color: white;
+}
+
+
+.badge {
+
+    display: inline-block;
+
+    padding: 8px 15px;
+
+    border-radius: 30px;
+
+    background: rgba(255,255,255,0.16);
+
+    border: 1px solid
+        rgba(255,255,255,0.25);
+
+    font-size: 13px;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 20px;
+}
+
+
+.hero h1 {
+
+    font-size: 52px;
+
+    line-height: 1.15;
+
+    margin-bottom: 20px;
+}
+
+
+.hero h1 span {
+
+    color: #60a5fa;
+}
+
+
+.hero p {
+
+    font-size: 18px;
+
+    color: #e5e7eb;
+
+    margin-bottom: 40px;
+}
+
+
+/* ================= SEARCH ================= */
+
+.search-area {
+
+    max-width: 1000px;
+
+    margin: auto;
+
+    padding: 12px;
+
+    background: white;
+
+    border-radius: 15px;
+
+    display: flex;
+
+    gap: 10px;
+
+    box-shadow:
+        0 15px 40px
+        rgba(0,0,0,0.3);
+}
+
+
+.search-input {
+
+    flex: 1;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 0 15px;
+
+    color: #555;
+}
+
+
+.search-input input {
+
+    width: 100%;
+
+    border: none;
+
+    outline: none;
+
+    font-size: 16px;
+}
+
+
+.search-area select {
+
+    min-width: 170px;
+
+    padding: 14px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 9px;
+
+    background: white;
+
+    font-size: 14px;
+
+    outline: none;
+}
+
+
+/* ================= MAIN ================= */
+
+main {
+
+    max-width: 1250px;
+
+    margin: 50px auto;
+
+    padding: 0 25px;
+}
+
+
+.heading-row {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-bottom: 30px;
+}
+
+
+.heading-row h2 {
+
+    font-size: 30px;
+
+    margin-bottom: 6px;
+}
+
+
+.heading-row p {
+
+    color: #6b7280;
+}
+
+
+#resultCount {
+
+    background: #e8efff;
+
+    color: #2563eb;
+
+    padding: 10px 15px;
+
+    border-radius: 30px;
+
+    font-weight: bold;
+
+    font-size: 14px;
+}
+
+
+/* ================= PG GRID ================= */
+
+.pg-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            auto-fit,
+            minmax(330px, 1fr)
+        );
+
+    gap: 28px;
+}
+
+
+/* ================= CARD ================= */
+
+.pg-card {
+
+    background: white;
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 5px 25px
+        rgba(0,0,0,0.08);
+
+    transition: 0.3s;
+
+    border: 1px solid #e8e8e8;
+}
+
+
+.pg-card:hover {
+
+    transform:
+        translateY(-7px);
+
+    box-shadow:
+        0 15px 35px
+        rgba(0,0,0,0.14);
+}
+
+
+/* ================= GOOGLE PHOTOS ================= */
+
+.photo-gallery {
+
+    height: 220px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 3px;
+
+    background: #ddd;
+}
+
+
+.pg-photo {
+
+    width: 100%;
+
+    height: 220px;
+
+    object-fit: cover;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.pg-photo:hover {
+
+    filter: brightness(0.8);
+
+    transform: scale(1.02);
+}
+
+
+.photo-placeholder {
+
+    width: 100%;
+
+    height: 220px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            #2563eb,
+            #172554
+        );
+
+    color: white;
+
+    font-size: 45px;
+}
+
+
+/* ================= CARD CONTENT ================= */
+
+.pg-content {
+
+    padding: 22px;
+}
+
+
+.pg-name {
+
+    font-size: 21px;
+
+    font-weight: 750;
+
+    margin-bottom: 10px;
+}
+
+
+.location {
+
+    color: #6b7280;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+
+    margin-bottom: 15px;
+}
+
+
+/* ================= RATING ================= */
+
+.rating-row {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    margin-bottom: 7px;
+}
+
+
+.rating {
+
+    background: #15803d;
+
+    color: white;
+
+    padding: 5px 9px;
+
+    border-radius: 6px;
+
+    font-weight: bold;
+}
+
+
+.stars {
+
+    color: #f59e0b;
+
+    font-size: 18px;
+}
+
+
+.review-count {
+
+    color: #6b7280;
+
+    font-size: 14px;
+}
+
+
+/* ================= PHONE ================= */
+
+.phone {
+
+    margin-top: 12px;
+
+    color: #374151;
+
+    font-size: 14px;
+}
+
+
+/* ================= BUTTONS ================= */
+
+.buttons {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 10px;
+
+    margin-top: 18px;
+}
+
+
+.btn {
+
+    padding: 12px;
+
+    border-radius: 9px;
+
+    text-align: center;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    font-size: 14px;
+
+    transition: 0.2s;
+}
+
+
+.call-btn {
+
+    background: #16a34a;
+
+    color: white;
+}
+
+
+.map-btn {
+
+    background: #2563eb;
+
+    color: white;
+}
+
+
+.google-btn {
+
+    grid-column: 1 / 3;
+
+    background: #f1f5f9;
+
+    color: #374151;
+
+    border: 1px solid #ddd;
+}
+
+
+.btn:hover {
+
+    opacity: 0.85;
+
+    transform: translateY(-1px);
+}
+
+
+/* ================= LOADING ================= */
+
+#loading {
+
+    text-align: center;
+
+    padding: 60px;
+
+    color: #6b7280;
+}
+
+
+.loader {
+
+    width: 45px;
+
+    height: 45px;
+
+    margin: auto;
+
+    margin-bottom: 15px;
+
+    border: 5px solid #ddd;
+
+    border-top: 5px solid #2563eb;
+
+    border-radius: 50%;
+
+    animation:
+        spin 1s linear infinite;
+}
+
+
+@keyframes spin {
+
+    to {
+
+        transform:
+            rotate(360deg);
+
+    }
+
+}
+
+
+/* ================= NO RESULTS ================= */
+
+.no-results {
+
+    display: none;
+
+    text-align: center;
+
+    padding: 80px 20px;
+}
+
+
+.no-results div {
+
+    font-size: 55px;
+
+    margin-bottom: 10px;
+}
+
+
+/* ================= MODAL ================= */
+
+.image-modal {
+
+    display: none;
+
+    position: fixed;
+
+    z-index: 1000;
+
+    left: 0;
+
+    top: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    background:
+        rgba(0,0,0,0.9);
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+
+.image-modal img {
+
+    max-width: 90%;
+
+    max-height: 85%;
+
+    border-radius: 10px;
+}
+
+
+.close {
+
+    position: absolute;
+
+    top: 20px;
+
+    right: 35px;
+
+    color: white;
+
+    font-size: 45px;
+
+    cursor: pointer;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+
+    background: #111827;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 40px 20px;
+
+    margin-top: 70px;
+}
+
+
+.footer-logo {
+
+    font-size: 25px;
+
+    font-weight: bold;
+
+    margin-bottom: 10px;
+}
+
+
+footer p {
+
+    color: #d1d5db;
+
+    margin-bottom: 10px;
+}
+
+
+footer small {
+
+    color: #9ca3af;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media(max-width: 750px) {
+
+    .hero,
+    .overlay {
+
+        min-height: 700px;
+    }
+
+
+    .hero h1 {
+
+        font-size: 36px;
+    }
+
+
+    .hero p {
+
+        font-size: 16px;
+    }
+
+
+    .search-area {
+
+        flex-direction: column;
+    }
+
+
+    .search-area select {
+
+        width: 100%;
+    }
+
+
+    .heading-row {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 15px;
+    }
+
+
+    .pg-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .nav-location {
+
+        display: none;
+    }
+
+
+    .photo-gallery {
+
+        height: 200px;
+    }
+
+
+    .pg-photo,
+    .photo-placeholder {
+
+        height: 200px;
+    }
+
+}

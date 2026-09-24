@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bommanahalli Gents PG Finder</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Maps JavaScript API -->
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_API_KEY&libraries=places"
+        defer>
+    </script>
+</head>
+
+<body>
+
+<!-- ================= HERO ================= -->
+
+<section class="hero">
+
+    <div class="overlay">
+
+        <nav>
+
+            <div class="logo">
+                <span>PG</span> Finder
+            </div>
+
+            <div class="nav-location">
+                📍 Bommanahalli, Bengaluru
+            </div>
+
+        </nav>
+
+
+        <div class="hero-content">
+
+            <div class="badge">
+                GENTS PG FINDER
+            </div>
+
+            <h1>
+                Find Your Perfect PG<br>
+                in <span>Bommanahalli</span>
+            </h1>
+
+            <p>
+                Compare Google ratings, reviews, photos,
+                location and contact details.
+            </p>
+
+
+            <div class="search-area">
+
+                <div class="search-input">
+
+                    🔍
+
+                    <input
+                        type="text"
+                        id="searchInput"
+                        placeholder="Search PG name or area..."
+                    >
+
+                </div>
+
+
+                <select id="ratingFilter">
+
+                    <option value="0">
+                        ⭐ All Ratings
+                    </option>
+
+                    <option value="4.5">
+                        ⭐ 4.5+
+                    </option>
+
+                    <option value="4">
+                        ⭐ 4.0+
+                    </option>
+
+                    <option value="3.5">
+                        ⭐ 3.5+
+                    </option>
+
+                </select>
+
+
+                <select id="sortSelect">
+
+                    <option value="rating">
+                        Highest Rating
+                    </option>
+
+                    <option value="reviews">
+                        Most Reviews
+                    </option>
+
+                    <option value="name">
+                        Name A-Z
+                    </option>
+
+                </select>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= MAIN ================= -->
+
+<main>
+
+    <div class="heading-row">
+
+        <div>
+
+            <h2>
+                Gents PGs near Bommanahalli
+            </h2>
+
+            <p>
+                Verified Google business information
+            </p>
+
+        </div>
+
+        <div id="resultCount">
+            Loading...
+        </div>
+
+    </div>
+
+
+    <div id="loading">
+
+        <div class="loader"></div>
+
+        <p>
+            Loading Google PG information...
+        </p>
+
+    </div>
+
+
+    <div
+        id="pgContainer"
+        class="pg-grid">
+    </div>
+
+
+    <div
+        id="noResults"
+        class="no-results">
+
+        <div>
+            😕
+        </div>
+
+        <h3>
+            No PGs found
+        </h3>
+
+        <p>
+            Try changing your search or rating filter.
+        </p>
+
+    </div>
+
+</main>
+
+
+<!-- ================= IMAGE MODAL ================= -->
+
+<div
+    id="imageModal"
+    class="image-modal">
+
+    <span
+        id="closeModal"
+        class="close">
+        ×
+    </span>
+
+    <img
+        id="modalImage"
+        src=""
+        alt="PG photo">
+
+</div>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="footer-logo">
+        PG Finder
+    </div>
+
+    <p>
+        Gents PGs • Bommanahalli • Bengaluru
+    </p>
+
+    <small>
+        Google ratings, reviews and photos are provided
+        through Google Places.
+    </small>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

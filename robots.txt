@@ -1,1 +1,4 @@
+User-agent: *
+Allow: /
 
+Sitemap: https://srujanmns2006-sketch.github.io/pg-finder/sitemap.xml
